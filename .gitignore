@@ -1,0 +1,14 @@
+# This .gitignore file is setup as a whitelist.
+# Ignore everything but check if anything in a direktory is unblocked later.
+*
+!*/
+
+# Track the git project files:
+!/.gitignore
+!/README.md
+!/LICENSE
+
+# Track the selected config files:
+!/alacritty/**
+!/fish/**
+!/starship.toml

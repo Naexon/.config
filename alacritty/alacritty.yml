@@ -1,0 +1,36 @@
+# See https://wiki.archlinux.org/title/Alacritty
+
+# Set fish as default shell
+shell:
+  program: /usr/bin/fish
+
+# Spawn new instance in same directory using Ctrl+Shift+Enter
+key_bindings:
+  - { key: Return,   mods: Control|Shift, action: SpawnNewInstance }
+
+# Set color scheme to Ayu Dark
+# See https://github.com/alacritty/alacritty/wiki/Color-schemes
+colors:
+  primary:
+    background: '#1C1C1C' # changed from 0A0E14 to better fit the pop-os default color scheme
+    foreground: '#B3B1AD'
+
+  normal:
+    black: '#01060E'
+    red: '#EA6C73'
+    green: '#91B362'
+    yellow: '#F9AF4F'
+    blue: '#53BDFA'
+    magenta: '#FAE994'
+    cyan: '#90E1C6'
+    white: '#C7C7C7'
+
+  bright:
+    black: '#686868'
+    red: '#F07178'
+    green: '#C2D94C'
+    yellow: '#FFB454'
+    blue: '#59C2FF'
+    magenta: '#FFEE99'
+    cyan: '#95E6CB'
+    white: '#FFFFFF'

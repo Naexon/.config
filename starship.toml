@@ -1,0 +1,126 @@
+## General
+
+# Username
+[username]
+disabled = false
+style_user = "green bold"
+style_root = "red bold"
+format = "[$user]($style) "
+show_always = true
+
+# Hostname only in SSH
+[hostname]
+disabled = false
+ssh_only = true
+format = "on [$hostname](bold yellow) "
+trim_at = "."
+
+# Duration since last open command line, i.e. aproximate of command duration
+[cmd_duration]
+disabled = false
+min_time = 4
+show_milliseconds = false
+style = "bold italic blue"
+
+# Battery percentage without icons
+[battery]
+format = "[$percentage]($style) "
+
+# Battery only below 10 percent
+[[battery.display]]
+threshold = 10
+style = "bold red"
+
+# Command line character
+[character]
+success_symbol = "[>](bold green)"
+error_symbol = "[>](bold red)"
+vimcmd_symbol = "[<](bold green)"
+
+# Local active directory and up to 5 subdirs
+[directory]
+truncate_to_repo = false
+truncation_length = 5
+truncation_symbol = ".../"
+read_only = " ro"
+
+# Active shell
+[shell]
+style = "gray"
+disabled = false
+
+## Git
+
+# Git commits
+[git_commit]
+tag_symbol = " tag "
+
+# Git divergence
+[git_status]
+disabled = false
+ahead = ">"
+behind = "<"
+diverged = "<>"
+renamed = "r"
+deleted = "x"
+
+# Git branch
+[git_branch]
+symbol = "git "
+
+## Languages
+
+# C
+[c]
+symbol = "C "
+format = "via [$symbol]($style)" # does not show the version
+
+# Rust
+[rust]
+symbol = "rs "
+format = "via [$symbol]($style)"
+
+# Go
+[golang]
+symbol = "go "
+format = "via [$symbol]($style)"
+
+# Java
+[java]
+symbol = "java "
+
+# Python
+[python]
+symbol = "py "
+
+## Frameworks (?)
+
+# Node.js
+[nodejs]
+symbol = "nodejs "
+
+# Active package
+[package]
+symbol = "pkg "
+
+## Tools
+
+# CMake
+[cmake]
+symbol = "cmake "
+format = "via [$symbol]($style)"
+
+# Docker
+[docker_context]
+symbol = "docker "
+format = "via [$symbol]($style)"
+
+# Helm
+[helm]
+symbol = "helm"
+format = "via [$symbol]($style)"
+
+# Terraform
+[terraform]
+symbol = "terraform "
+format = "via [$symbol]($style)"
